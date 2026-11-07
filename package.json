@@ -1,0 +1,17 @@
+{
+  "name": "web-auth-security-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Authentication and authorisation boundary tests against the-internet.herokuapp.com, an application published for automation practice.",
+  "scripts": {
+    "test": "playwright test",
+    "test:authz": "playwright test tests/02-authz-matrix.spec.ts",
+    "test:headers": "playwright test tests/04-transport-and-headers.spec.ts",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
